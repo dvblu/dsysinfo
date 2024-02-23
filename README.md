@@ -8,7 +8,7 @@ Clone the Repository: Clone this repository to your local machine using the foll
 
 bash
 Copy code
-git clone https://github.com/your-username/system-info-daemon.git
+git clone https://github.com/dvblu/dsysinfo.git
 Navigate to Directory: Enter the directory containing the script:
 
 bash
