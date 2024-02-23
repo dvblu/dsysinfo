@@ -1,4 +1,4 @@
-# dsysinfo
+# dsysinfo Version 1.0
 
 System Information Daemon
 The System Information Daemon is a Python script that continuously monitors and displays various system information such as hardware details, network information, disk usage, process information, system uptime, logged-in users, file systems, kernel version, and more. It utilizes the psutil, socket, and subprocess modules to gather system-related data and prints them to the console.
