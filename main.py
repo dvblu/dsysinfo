@@ -107,10 +107,13 @@ class SystemInfoDaemon:
                 break
 
     def update_system_info(self):
+        self.print_pid()  # Print PID at the beginning
         while True:
-            self.print_pid()
-            self.fetch_system_info()
-            time.sleep(10)
+            user_input = input("\nType 'report' to fetch system data: ")
+            if user_input.strip().lower() == "report":
+                self.fetch_system_info()
+            else:
+                print("Invalid input. Type 'report' to fetch system data.")
 
     def print_pid(self):
         print(f"\n\033[96mDaemon PID: {os.getpid()}\033[0m")
@@ -124,4 +127,3 @@ def run_daemon():
 
 if __name__ == "__main__":
     run_daemon()
-
